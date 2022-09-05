@@ -1,2 +1,8 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+<form action="/process" method="POST">
+  <input type="hidden" name="_csrf" value="{{csrfToken}}">
+  
+  Favorite color: <input type="text" name="favoriteColor">
+  <button type="submit">Submit</button>
+</form>
